@@ -1,6 +1,6 @@
 {
   "name": "@mindlessxd/ipify",
-  "version": "0.0.5",
+  "version": "0.1.1",
   "description": "Module For Easy Access Of The IPIFY Service",
   "main": "indjex.js",
   "repository": {
@@ -8,13 +8,11 @@
     "url": "git+https://github.com/MindlessXD/ipify.git"
   },
   "scripts": {
-    "clean": "RMDIR /Q/S .\\node_modules",
-    "publish": "npm publish --access public"
+    "clean": "RMDIR /Q/S .\\node_modules"
   },
   "keywords": [
     "ip",
     "ipv4",
-    "ipv6",
     "public",
     "external"
   ],
@@ -25,6 +23,6 @@
   },
   "homepage": "https://github.com/MindlessXD/ipify#readme",
   "dependencies": {
-    "axios": "^0.21.1"
+    "got": "^11.8.1"
   }
 }

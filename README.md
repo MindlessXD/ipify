@@ -1,5 +1,5 @@
 ## IPIFY
-Module For Easy Access Of The IPIFY Service
+Module For Easy Streamlined Access Of The IPIFY IPv4 Service
 
 ### Install
 ```
@@ -10,26 +10,14 @@ npm i @mindlessxd/ipify
 
 #### IPv4
 ```javascript
-const ipify = require('ipify')
+const ipify = require('@mindlessxd/ipify');
 
-console.log( ipify.ip4() )
-// Returns Plain Text IPv4
-//=> '8.8.8.8' 
-
-console.log( ipify.ip4("json") )
-// Returns Json Formated IPv4
-//=> {"ip":"98.207.254.136"}
-```
-
-#### IPv6
-```javascript
-const ipify = require('ipify')
-
-console.log( ipify.ip6() )
-// Returns Plain Text IPv6
-//=> '2001:4860:4860::8888'
-
-console.log( ipify.ip6("json") )
-// Returns Json Formated IPv6
-//=> {"ip":"2001:4860:4860::8888"} 
-```
+(async () => {
+	try {
+        let ipv4 = await ipify.ip4()
+        console.log(ipv4)
+	} catch (error) {
+        console.log(error)
+	}
+})();
+````
