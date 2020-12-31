@@ -13,11 +13,11 @@ npm i @mindlessxd/ipify
 const ipify = require('@mindlessxd/ipify');
 
 (async () => {
-	try {
-        let ipv4 = await ipify.ip4()
-        console.log(ipv4)
-	} catch (error) {
+    try {
+        let ip = await ipify()
+        console.log(ip)
+    } catch (error) {
         console.log(error)
-	}
+    }
 })();
 ````

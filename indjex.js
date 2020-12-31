@@ -5,7 +5,7 @@ const got = require('got')
  * @function -  Get IPv4
  * @param {string} format - Format Of The Return (Json Or Plain Tesxt)
  */
-module.exports.ip4 = async ( format ) => {
+module.exports = async ( format ) => {
     let url 
 
     if (format === null) url = "https://api.ipify.org"
