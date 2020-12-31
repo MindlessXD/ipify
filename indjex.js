@@ -1,14 +1,5 @@
 const axios = require('axios').default
 
-async function getIP(url) {
-    try {
-        return response = await axios.get(url)
-    } catch (error) {
-        console.error(error)
-        return new error("Not Available")
-    }
-}
-
 /**
  * Fuction For Getting Your External IPv4 Address.
  * @function -  Get IPv4
@@ -21,7 +12,13 @@ module.exports.ip4 = ( format ) => {
     if (format !== "json") url = "https://api.ipify.org"
     if (format === "json") url = "https://api.ipify.org?format=json"
     
-    return await getIP(url)
+    axios.get(url)
+    .then(function (response) {
+        return response
+    })
+      .catch(function (error) {
+        return new error("Not Available")
+    })
 }
 
 /**
@@ -36,5 +33,11 @@ module.exports.ip6 = (format) => {
     if (format !== "json") url = "https://api64.ipify.org"
     if (format === "json") url = "https://api64.ipify.org?format=json"
 
-    return await getIP(url)
+    axios.get(url)
+    .then(function (response) {
+        return response
+    })
+      .catch(function (error) {
+        return new error("Not Available")
+    })
 }
