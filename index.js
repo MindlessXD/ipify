@@ -3,7 +3,7 @@ const got = require('got')
 /**
  * Fuction For Getting Your External IPv4 Address.
  * @function -  Get IPv4
- * @param {string} format - Format Of The Return (Json Or Plain Tesxt)
+ * @param {string} format - Format Of The Return (Json Or Plain Test)
  */
 module.exports = async ( format ) => {
     let url 

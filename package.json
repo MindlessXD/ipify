@@ -1,8 +1,8 @@
 {
   "name": "@mindlessxd/ipify",
-  "version": "0.1.2",
+  "version": "1.0.1",
   "description": "Module For Easy Access Of The IPIFY Service",
-  "main": "indjex.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MindlessXD/ipify.git"
